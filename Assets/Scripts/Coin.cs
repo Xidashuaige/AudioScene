@@ -6,7 +6,7 @@ public class Coin : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            AudioManager.PlayAudio(Audios.coins);
+            AudioManager.Instance.PlayAudio(Audios.coins);
             Destroy(gameObject);
         }
     }
