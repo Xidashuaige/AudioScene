@@ -11,11 +11,11 @@ public enum Audios
 
 public class AudioManager : MonoBehaviour
 {
-    private AudioSource[] waterSteps;
-    private AudioSource[] groundSteps;
-    private AudioSource[] grassSteps;
-    private AudioSource[] sandSteps;
-    private AudioSource coins;
+    static private AudioSource[] waterSteps;
+    static private AudioSource[] groundSteps;
+    static private AudioSource[] grassSteps;
+    static private AudioSource[] sandSteps;
+    private static readonly AudioSource coins;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +32,7 @@ public class AudioManager : MonoBehaviour
 
     }
 
-    public void PlayAudio(Audios audio)
+    static public void PlayAudio(Audios audio)
     {
         switch (audio)
         {

@@ -1461,7 +1461,7 @@ namespace SUPERCharacter
                         if (footstepSoundSet[i]._Materials.Contains(currentGroundInfo.groundMaterial) ||
                          footstepSoundSet[i]._matInstanceName.Contains(currentGroundInfo.groundMaterial.name))
                         {
-                            print(currentGroundInfo.groundMaterial);
+                            //print(currentGroundInfo.groundMaterial);
                             currentClipSet = footstepSoundSet[i].footstepClips;
                             break;
                         }
